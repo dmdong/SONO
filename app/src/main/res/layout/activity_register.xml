@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f5f8"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FE5722"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                android:layout_margin="10dp"
+                android:id="@+id/ivProfile"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_input_add"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a profile picture"
+                android:textSize="16sp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="#fff"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+
+                />
+            <EditText
+                android:id="@+id/edtPasscode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Passcode (4 numbers)"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberPassword"
+                android:imeOptions="actionNext"
+
+                />
+            <EditText
+                android:id="@+id/edtPassConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Passcode"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberPassword"
+                android:imeOptions="actionDone"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnCreateAcc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:background="#FE5722"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#fff"
+            android:textColorHighlight="#fcf"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

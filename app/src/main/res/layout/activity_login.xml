@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/login_form"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!---->
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="80dp"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:orientation="vertical"
+            >
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:id="@+id/edtPasscode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/passcode"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="4"
+
+                    />
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:background="@drawable/icon_circle"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:text="1"-->
+                <!--android:textSize="40sp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:gravity="center"-->
+                <!--android:clickable="true"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:background="@drawable/icon_circle"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="2"-->
+                <!--android:textSize="40sp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:gravity="center"-->
+                <!--android:clickable="true"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:background="@drawable/icon_circle"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:text="3"-->
+                <!--android:textSize="40sp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:text="4"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"                    />-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="5"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:text="6"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:text="7"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"                    />-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="8"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:text="9"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/icon_circle"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="0"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:text="Delete"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <Button
+                android:id="@+id/btnSignin"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+<!--</RelativeLayout>-->
+</ScrollView>

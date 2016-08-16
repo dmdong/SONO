@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a name or select from contact:"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/pName"
+            android:imeOptions="actionNext"
+            />
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/address_book_2"
+            android:layout_alignTop="@id/pName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/selectContact"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Debt Type >>"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$$$"
+                android:id="@+id/selectMoney"
+                android:layout_margin="8dp"
+                android:onClick="onRadioButtonClicked"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promise"
+                android:id="@+id/selectPromise"
+                android:layout_margin="8dp"
+                android:onClick="onRadioButtonClicked"
+
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:id="@+id/selectEvent"
+                android:layout_margin="8dp"
+                android:onClick="onRadioButtonClicked"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/descDebt"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Amount:"
+                android:layout_weight="0.5" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Currency: "
+                android:textSize="10sp"
+                android:id="@+id/selectCurrency"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/amount"
+            android:imeOptions="actionNext"
+            />
+
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/debtInfo"-->
+        <!--android:textSize="18sp"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give a description, a reason or information:"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/debtInfo"
+            android:textAlignment="textStart"
+            android:imeOptions="actionNext"
+            />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/start"
+        android:weightSum="1"
+        android:layout_marginRight="4dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="01/01/2016"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+
+            android:id="@+id/startDate"
+            />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/calendar_128"
+            android:id="@+id/iVStartDate"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="4dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expDate"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="01/01/2017"
+            android:textSize="24sp"
+            android:id="@+id/expDate"
+            android:layout_centerInParent="true"
+
+            />
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/calendar_128"
+            android:id="@+id/iVExpDate"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

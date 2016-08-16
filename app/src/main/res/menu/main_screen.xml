@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+    <item android:id="@+id/icoSearch"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction = "always|collapseActionView|withText"
+        app:actionViewClass = "android.widget.SearchView"/>
+    <item android:id="@+id/multiple_delete"
+        android:title="Edit multiple"
+        android:icon="@android:drawable/ic_menu_set_as"
+        app:showAsAction = "never"/>
+    <!--<item android:id="@+id/addDebt"-->
+        <!--android:title="Add Debt"-->
+        <!--android:icon="@android:drawable/ic_input_add"-->
+        <!--app:showAsAction="always"/>-->
+
+
+
+
+
+</menu>
